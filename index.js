@@ -3,7 +3,8 @@ const mysql = require('mysql2/promise');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-const port = 3002;
+
+const PORT = process.env.PORT || 3030;
 app.use(cors());
 
 app.use(bodyParser.json());
@@ -101,6 +102,6 @@ app.delete('/api/users/:id', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
 });
