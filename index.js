@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 
 // MySQL Database Connection
 const pool = mysql.createPool({
-  host: 'server148.iseencloud.com',
-  user: 'easuneng_merkadoTesting',
+  host: 'srv740.hstgr.io',
+  user: 'u888860508_raghavanoffici',
   password: '232003@Anbu',
-  database: 'easuneng_sample',
+  database: 'u888860508_sampletest',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
